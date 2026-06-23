@@ -88,49 +88,7 @@
 
       .profile {
         text-align: center;
-        padding: 12px 0 24px;
-      }
-
-      .avatar {
-        width: 138px;
-        height: 138px;
-        margin: 0 auto 18px;
-        border-radius: 999px;
-        padding: 6px;
-        background: linear-gradient(135deg, rgba(201, 149, 108, 0.85), rgba(201, 149, 108, 0.12));
-        box-shadow: 0 0 0 1px rgba(201, 149, 108, 0.28), 0 18px 40px rgba(0, 0, 0, 0.28);
-      }
-
-      .avatar-inner {
-        width: 100%;
-        height: 100%;
-        border-radius: 999px;
-        overflow: hidden;
-        border: 4px solid rgba(255, 245, 235, 0.08);
-        background:
-          linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
-          linear-gradient(160deg, #2b2724 0%, #151311 100%);
-        display: grid;
-        place-items: center;
-        position: relative;
-      }
-
-      .avatar-inner span {
-        font-family: "Montserrat", sans-serif;
-        font-size: 18px;
-        font-weight: 800;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--primary);
-      }
-
-      .avatar-inner small {
-        position: absolute;
-        bottom: 16px;
-        font-size: 10px;
-        letter-spacing: 0.28em;
-        text-transform: uppercase;
-        color: var(--muted-foreground);
+        padding: 8px 0 22px;
       }
 
       .eyebrow {
@@ -141,14 +99,8 @@
         color: var(--primary);
       }
 
-      .profile h1 {
-        margin-top: 10px;
-        font-size: clamp(30px, 5vw, 46px);
-        line-height: 1.02;
-      }
-
       .category {
-        margin-top: 8px;
+        margin-top: 6px;
         color: var(--muted-foreground);
         font-size: 15px;
         font-weight: 700;
@@ -160,34 +112,6 @@
         color: var(--muted-foreground);
         line-height: 1.72;
         font-size: 15px;
-      }
-
-      .quick-contact {
-        margin-top: 18px;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-
-      .quick-contact a {
-        display: inline-flex;
-        align-items: center;
-        min-height: 42px;
-        padding: 0 14px;
-        border-radius: 999px;
-        background: var(--card);
-        border: 1px solid var(--border);
-        color: var(--foreground);
-        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
-        font-size: 14px;
-        font-weight: 700;
-        transition: 180ms ease;
-      }
-
-      .quick-contact a:hover {
-        transform: translateY(-1px);
-        border-color: rgba(201, 149, 108, 0.5);
       }
 
       .offer-list {
@@ -313,25 +237,11 @@
     <main class="page">
       <div class="wrap">
         <section class="profile" aria-label="Perfil">
-          <div class="avatar" aria-hidden="true">
-            <div class="avatar-inner">
-              <span>Foto</span>
-              <small>Rômulo</small>
-            </div>
-          </div>
-
           <div class="eyebrow">Mentor expecialista em Automação com IA</div>
-          <h1>Rômulo Zorzanelli</h1>
           <p class="bio">
             Fundador do ZD Agent e criador do Método 4D. +7 anos automatizando vendas com IA,
             46+ Agências de IA formadas.
           </p>
-
-          <div class="quick-contact" aria-label="Contato rápido">
-            <a href="https://instagram.com/romuloautomacoes" target="_blank" rel="noreferrer">
-              @romuloautomacoes
-            </a>
-          </div>
         </section>
 
         <section class="offer-list" aria-label="Cards de oferta">
@@ -377,19 +287,6 @@
         <section class="social-section" aria-label="Redes sociais">
           <h2>Faça parte da nossa comunidade!</h2>
           <div class="social-icons">
-            <a
-              class="social-icon"
-              href="https://instagram.com/romuloautomacoes"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-            >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="#c9956c" stroke-width="1.8" />
-                <circle cx="12" cy="12" r="4" stroke="#c9956c" stroke-width="1.8" />
-                <circle cx="17.2" cy="6.8" r="1.1" fill="#c9956c" />
-              </svg>
-            </a>
             <a
               class="social-icon"
               href="https://youtube.com"
